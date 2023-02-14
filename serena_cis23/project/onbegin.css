@@ -1,0 +1,1674 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+font-family: 'Inter';
+position: relative;
+overflow-y: scroll;
+background: #000000;
+  }
+
+  @font-face {
+    font-family:Inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+  }
+
+  body {
+    display: center;
+    width: 666px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:OCRAStd;
+    position: static;
+  }
+  
+#Rectangle1{
+position: absolute;
+width: 833px;
+height: 2502px;
+
+background: #FFFFFF;
+box-shadow: 36px 36px 4px rgba(255, 255, 255, 0.29);
+}
+
+#Vector4{
+    position: absolute;
+    width: 764px;
+    height: 0px;
+    border: 1px solid #000000;
+
+}
+    
+#Vector7{
+    position: absolute;
+    width: 764px;
+    height: 0px;
+    border: 1px solid #000000;} 
+    
+#KeyWords{
+position: absolute;
+width: 405px;
+height: 50px;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+}
+
+  #mainpage {
+
+
+
+
+
+
+/* Poems will converse */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Poems will converse */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Theatrical thoughts */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Theatrical thoughts */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Act or word */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Act or word */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Similar first lines */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Similar first lines */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Fruit, Poetry and Poets */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Fruit, Poetry and Poets */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Ending denied by the children */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Ending denied by the children */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Significant sentence */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Significant sentence */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Origins have consequences */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Origins have consequences */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Poems without endings */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Frame 2 */
+
+
+position: relative;
+width: 405px;
+height: 30px;
+
+
+
+/* The End of Film and Fiction */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* The End of Film and Fiction */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* The same " Lesson " */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* The same " Lesson " */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* On a scrap of paper */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* On a scrap of paper */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Exploration */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Exploration */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Before Act */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Before Act */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Three ways to end */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Three ways to end */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Poetic Closure */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Poetic Closure */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Semicolon and punctuation */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Semicolon and punctuation */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Growing */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Growing */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Abandoned Poetry */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Abandoned Poetry */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Finish a book */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Finish a book */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Misunderstanding */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Misunderstanding */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Text in Cy Twombly's work */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Text in Cy Twombly's work */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* The beginning of the idea */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* The beginning of the idea */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Admiration and disappointment */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Admiration and disappointment */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Origins and Knows */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Origins and Knows */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* A poem is a semicolon */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* A poem is a semicolon */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:09.91 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:08.06 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 01:38.54 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:07.50 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 01:53.00 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:28.06 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 01:13.45 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:53.07 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:05.48 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:23.75 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:15.23 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:42.12 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:11.16 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:32.26 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:26.27 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:17.88 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:35.85 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:32.36 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:11.93 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:18.01 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:20.63 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:11.13 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:15.03 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:27.53 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:44.65 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:45.37 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* 00:25.63 */
+
+
+position: absolute;
+width: 405px;
+height: 30px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: right;
+
+color: #000000;
+
+mix-blend-mode: normal;
+
+
+/* Approximate reading time required */
+
+
+position: absolute;
+width: 342px;
+height: 56px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Vector 2 */
+
+
+position: absolute;
+width: 764px;
+height: 0px;
+
+border: 1px solid #000000;
+
+
+/* Vector 3 */
+
+
+position: absolute;
+width: 764px;
+height: 0px;
+
+border: 6px solid #000000;
+
+
+/* Learn more about the author by scanning the QR code */
+
+
+position: absolute;
+width: 511px;
+height: 70px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 31px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* MADE BY SERENA */
+
+
+position: absolute;
+width: 349px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 31px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Text */
+
+
+position: absolute;
+width: 245px;
+height: 402px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* 126-142 ? */
+
+
+position: absolute;
+width: 245px;
+height: 164px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Page in the book: Your Total time: */
+
+
+position: absolute;
+width: 245px;
+height: 164px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* top part */
+
+
+position: absolute;
+width: 833px;
+height: 371px;
+
+
+
+/* qrcode1 */
+
+
+position: absolute;
+width: 519px;
+height: 519px;
+
+background: url(qr.png);
+
+
+/* IMG_0500 */
+
+
+position: absolute;
+width: 1312px;
+height: 2588px;
+
+background: url(IMG_0500.png);
+mix-blend-mode: difference;
+opacity: 0.56;
+
+
+/* IMG_0499 */
+
+
+position: absolute;
+width: 1514px;
+height: 3807px;
+
+background: url(IMG_0499.jpg);
+mix-blend-mode: lighten;
+opacity: 0.46;
+   
+  }

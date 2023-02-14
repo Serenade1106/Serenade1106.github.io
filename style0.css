@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    background: url(back.JPG);
+    font-size: 22px;
+    line-height: 1.5;
+    
+  }
+  @font-face {
+    font-family:SairaCondensed-Regular;
+    src: url(SairaCondensed-Regular.ttf);
+  }
+  @font-face {
+    font-family:OCRAStd;
+    src: url(OCRAStd.otf);
+  }
+  @font-face {
+    font-family:ComicSansMS;
+    src: url(ComicSansMS.ttf);
+  }
+  @font-face {
+    font-family:Teko-Regular;
+    src: url(Teko-Regular.ttf);
+  }
+  @font-face {
+    font-family:Tomorrow-LightItalic;
+    src: url(Tomorrow-LightItalic.ttf);
+  }
+  @font-face {
+    font-family:ShadowsIntoLightRegular;
+    src: url(ShadowsIntoLightRegular.ttf);
+  }
+  
+  .homeguide {
+    overflow: hidden;
+    padding: 6px;
+    text-align:right;
+    font-family:OCRAStd;
+
+  }
+  .homeguide a {
+    display: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+
+  }
+  .homeguide a:hover {
+    background-color: rgb(240, 250, 252);
+    color:pink;
+    }
+  .homeguide a.active {
+    background-color:#eb0079;
+    color: black;
+  }
+
+
+  body {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1100px;
+    min-height: 100vh;
+    font-family:SairaCondensed-Regular;
+    color: rgb(240, 250, 252);
+  }
+
+ 
+  header {
+    color: cornsilk;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: OCRAStd;
+  }
+  h4{
+    color: rgb(75, 96, 152);
+    font-family:Tomorrow-LightItalic;
+  }
+  h3{
+    color: cornsilk;
+  }
+  h2{
+    color: cornsilk;
+    font-family:OCRAStd;
+  }
