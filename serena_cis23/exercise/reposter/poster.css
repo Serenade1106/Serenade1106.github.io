@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Prompt;
+    src: url(Prompt-Italic.ttf);
+  }
+
+
+  body {
+    display: center;
+    font-family: 'Prompt';
+    background:#2c2c2c    ;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+
+  .img01{
+    display: block;
+    animation: rotate 6s linear infinite;
+  }
+
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+  }
