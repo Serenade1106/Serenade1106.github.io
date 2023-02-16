@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Prompt;
+    src: url(Prompt-Italic.ttf);
+  }
+
+  @font-face {
+    font-family:home;
+    src: url(HomemadeApple-Regular.ttf);
+  }
+
+  @font-face {
+    font-family:Inkn;
+    src: url(InknutAntiqua-Regular.ttf);
+  }
+
+
+  body {
+    display: center;
+    font-family: 'Prompt';
+    background: #000000;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  h1{
+    font-family: 'Inkn';
+  }
+  h3{
+    font-family: 'Inkn';
+    text-align:right;
+  }
+
+  .center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .homeguide {
+    overflow: hidden;
+    padding: 16px;
+    text-align:center;
+    font-family:home;
+  }
+  
+  .homeguide a {
+    color: #f2f2f2;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+
+  .homeguide a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    }
+
+.wrapper {
+    max-width:700px;
+    padding:70px;
+    margin:0 auto;
+    background: #ffffff;
+    background-size:1em 100%;;
+    box-shadow: 36px 36px 4px rgba(255, 255, 255, 0.29);
+}
+ .Rectangle7{
+    position: absolute;
+    width: 793px;
+    height: 22px;
+    background: #000000;
+ }
+
+ .Ellipse32{
+    position: absolute;
+    left: 400px;
+    top:800px;
+    width: 605px;
+    height: 605px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
+    mix-blend-mode: hard-light;
+ }
+
+ .Ellipse31{
+    position: absolute;
+    left: 370px;
+    top:400px;
+    width: 411px;
+    height: 411px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
+    mix-blend-mode: hard-light;
+ }      
+
+ .Ellipse33{
+    position: absolute;
+    left: 370px;
+    top:1650px;
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
+    mix-blend-mode: hard-light;
+ }      

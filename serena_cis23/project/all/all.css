@@ -7,6 +7,12 @@
     src: url(Prompt-Italic.ttf);
   }
 
+  @font-face {
+    font-family:home;
+    src: url(HomemadeApple-Regular.ttf);
+  }
+
+
   body {
     display: center;
     font-family: 'Prompt';
@@ -14,11 +20,30 @@
     font-size: 20px;
     line-height: 27px;
   }
+
+  .homeguide {
+    overflow: hidden;
+    padding: 16px;
+    text-align:left;
+    font-family:home;
+  }
   
+  .homeguide a {
+    color: #f2f2f2;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+
+  .homeguide a:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    }
+
 .wrapper {
     max-width:700px;
     padding:70px;
     margin:0 auto;
-    background: #FFFFFF;
+    background: url(multi.png);
+    background-size:1em 100%;;
     box-shadow: 36px 36px 4px rgba(255, 255, 255, 0.29);
 }
