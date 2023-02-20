@@ -35,9 +35,8 @@ body {
 h3{
   text-align:left;
   left: 350px;
-  position: absolute;
-  width: 405px;
   height: 50px;
+  display: inline-block;
   font-family: 'Inter';
   font-weight: 400;
   font-size: 24px;
@@ -47,8 +46,7 @@ h3{
 h2{
   text-align:right;
   left: 560px;
-  position: absolute;
-  width: 405px;
+  float: right;
   height: 50px;
   font-family: 'Inter';
   font-weight: 400;
@@ -58,8 +56,7 @@ h2{
 h4{
   text-align:left;
   left: 400px;
-  position: absolute;
-  width: 245;
+  float: left;
   height: 164px;
   font-family: 'light';
   font-weight: 300;
@@ -69,8 +66,7 @@ h4{
 h5{
   text-align:center;
   left: 510px;
-  position: absolute;
-  width: 245;
+  position: static;
   height: 164px;
   font-family: 'light';
   font-weight: 300;
@@ -81,8 +77,9 @@ h5{
 p{
   text-align:right;
   left: 560px;
-  position: absolute;
-  width: 405px;
+  position: static;
+  float: right;
+  width: 405px;  
   height: 50px;
   font-family: 'light';
   font-weight: 400;
