@@ -86,10 +86,10 @@
 
  .Ellipse32{
     position: absolute;
-    left: 400px;
+    left: 365px;
     top:800px;
-    width: 605px;
-    height: 605px;
+    width: 250px;
+    height: 250px;
     background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
     mix-blend-mode: hard-light;
  }
