@@ -11,7 +11,11 @@
     font-family:home;
     src: url(HomemadeApple-Regular.ttf);
   }
-
+  @font-face {
+    font-family:light;
+    src: url(Inter-Light.ttf);
+  }
+  
 
   body {
     display: center;
@@ -43,7 +47,8 @@
     overflow: hidden;
     padding: 16px;
     text-align:left;
-    font-family:home;
+    font-family:light;
+    font-style: italic;
   }
   
   .homeguide a {

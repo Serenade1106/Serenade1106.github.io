@@ -7,15 +7,17 @@
     src: url(Prompt-Italic.ttf);
   }
 
-  @font-face {
-    font-family:home;
-    src: url(HomemadeApple-Regular.ttf);
-  }
 
   @font-face {
     font-family:Inkn;
     src: url(InknutAntiqua-Regular.ttf);
   }
+
+  @font-face {
+    font-family:light;
+    src: url(Inter-Light.ttf);
+  }
+  
 
 
   body {
@@ -55,7 +57,8 @@
     overflow: hidden;
     padding: 16px;
     text-align:center;
-    font-family:home;
+    font-family:light;
+    font-style: italic;
   }
   
   .homeguide a {
@@ -84,32 +87,3 @@
     background: #000000;
  }
 
- .Ellipse32{
-    position: absolute;
-    left: 365px;
-    top:800px;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
-    mix-blend-mode: hard-light;
- }
-
- .Ellipse31{
-    position: absolute;
-    left: 370px;
-    top:400px;
-    width: 411px;
-    height: 411px;
-    background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
-    mix-blend-mode: hard-light;
- }      
-
- .Ellipse33{
-    position: absolute;
-    left: 370px;
-    top:1650px;
-    width: 360px;
-    height: 360px;
-    background: radial-gradient(50% 50% at 50% 50%, #FFFDFD 0%, rgba(255, 253, 253, 0.833513) 23.96%, rgba(255, 253, 253, 0.78) 46.35%, rgba(255, 253, 253, 0.61) 69.79%, rgba(255, 253, 253, 0.29) 89.58%);
-    mix-blend-mode: hard-light;
- }      
