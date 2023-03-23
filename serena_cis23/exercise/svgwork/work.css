@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .container{
+    display: block;
+    animation: spinType 6s linear infinite;
+  }
+
+
+  @keyframes spinType {
+    0% {
+      transform: rotate(0.5turn);
+    }
+    60% {
+      transform: rotate(0.7turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+
