@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:bod;
+    src: url(CormorantGaramond-BoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family:PLAY;
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family:COR;
+    src: url(CormorantGaramond-Medium.ttf);
+  }
+
+
+  html {
+    background-color:#E4E1D8;
+    ; 
+  }
+  .image-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0.9;
+    perspective: 1000px;
+    
+  }
+
+  img {
+    max-width: 10%;
+    max-height: 10%; 
+    object-fit: contain; 
+    mix-blend-mode: multiply;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
+    transform: rotate(2.34deg);
+  }
+ 
+  h1{
+    font-family:bod;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 160%;
+  }
+
+  h2{
+    font-family:COR;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 160%;
+    text-align: center;
+  }
+
+  h3{
+    font-family:COR;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 160%;
+    text-align: center;
+  }
+
+h4{
+    font-family:COR;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 160%;
+    text-align: center;
+}
