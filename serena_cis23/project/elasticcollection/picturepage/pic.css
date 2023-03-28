@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Handwrite;
+    src: url(LiuJianMaoCao-Regular.ttf);
+  }
+
+  html {
+    background-color:#F5F4F2;
+    ; 
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    mix-blend-mode: color-dodge;
+    opacity: 0.9;
+    perspective: 1000px
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; 
+
+  }
+ 

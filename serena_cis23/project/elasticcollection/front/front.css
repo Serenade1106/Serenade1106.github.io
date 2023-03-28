@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Handwrite;
+    src: url(LiuJianMaoCao-Regular.ttf);
+  }
+  @font-face {
+    font-family:ENG1;
+    src: url(LibreBaskerville-Regular.ttf);
+  }
+
+
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    video {
+      display: none;
+    }
+    body {
+      background: #E4E1D8;
+      background-size: cover;
+    }
+  }
+
+  h1{
+    font-family:Handwrite;
+    z-index: 1;
+    font-weight: 400;
+    font-size:35vw;
+    color: #E4E1D8;
+    text-align:center;
+    position: relative;
+    display: inline-block;
+  }
+
+  h2{
+    font-family:ENG1;
+    font-weight: 500;
+    font-size: 10vw;
+    z-index: 0;
+    color: #E4E1D8;
+    text-align: left;
+
+    display: inline-block;
+  }
+
+  h3{
+    font-family:ENG1;
+    font-weight: 500;
+    font-size: 10vw;
+    z-index: 0;
+    color: #E4E1D8;
+    text-align: right;
+    display: inline-block;
+  }
+
