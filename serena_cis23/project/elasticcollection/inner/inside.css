@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
   }
-
+  body {
+    overflow-x: hidden;
+  }
+ 
   @font-face {
     font-family:bod;
     src: url(CormorantGaramond-BoldItalic.ttf);
@@ -27,14 +30,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vw;
+    width:100vw;
     opacity: 0.9;
     perspective: 1000px;
+    position:absolute;
+    left: 120vw;
+    top: 105vw;
+    transform: translate(-50%,-50%);
   }
 
   .photo1{
-    max-width: 40%;
-    max-height: 10%; 
+    max-width: 50%;
+    max-height: 8%; 
     object-fit: contain; 
     mix-blend-mode: multiply;
     display: block;
@@ -54,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
   opacity: 0.9;
   perspective: 1000px;
 }
@@ -82,10 +90,18 @@
     text-align: center;
   }
 
+  .container0 {
+    position:absolute;
+    left: 75vw;
+    top: 95vw;
+    transform: translate(-50%,-50%);
+  }
+
 h4{
     font-family:COR;
     font-weight: 500;
     font-size: 2vw;
     line-height: 160%;
     text-align: center;
+    
 }
