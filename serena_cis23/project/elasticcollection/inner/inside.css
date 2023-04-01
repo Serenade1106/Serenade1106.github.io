@@ -8,8 +8,8 @@
   }
 
   @font-face {
-    font-family:PLAY;
-    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+    font-family:Bic;
+    src: url(BigCaslon-Medium.woff2);
   }
 
   @font-face {
@@ -22,25 +22,42 @@
     background-color:#E4E1D8;
     ; 
   }
-  .image-container2 {
+
+  .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     opacity: 0.9;
     perspective: 1000px;
-    
   }
 
-  img {
-    max-width: 10%;
+  .photo1{
+    max-width: 40%;
     max-height: 10%; 
     object-fit: contain; 
     mix-blend-mode: multiply;
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
-    transform: rotate(2.34deg);
-  }
- 
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+
+ }
+ .photo2{
+  max-width: 10%;
+  max-height: 10%; 
+  object-fit: contain; 
+  mix-blend-mode: multiply;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
+  transform: rotate(2.34deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 0.9;
+  perspective: 1000px;
+}
   h1{
     font-family:bod;
     text-align: center;
@@ -50,7 +67,7 @@
   }
 
   h2{
-    font-family:COR;
+    font-family:Bic;
     font-weight: 500;
     font-size: 2vw;
     line-height: 160%;
@@ -58,7 +75,7 @@
   }
 
   h3{
-    font-family:COR;
+    font-family:Bic;
     font-weight: 500;
     font-size: 2vw;
     line-height: 160%;

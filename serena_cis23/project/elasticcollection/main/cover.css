@@ -19,10 +19,11 @@
     ; 
   }
   .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    position: absolute;
+    left:40%;
+    top: 12%;
+    height: 45vw;
+    width:45vw;
     mix-blend-mode: color-burn;
     opacity: 0.9;
     perspective: 1000px
@@ -52,6 +53,25 @@
     object-fit: contain; 
   }
  
+  .container0 {
+    position:absolute;
+    left: 90%;
+    top: 170%;
+    transform: translate(-50%,-50%);
+  }
+  .container2 {
+    position:absolute;
+    left: 82%;
+    top: 215%;
+    transform: translate(-50%,-50%);
+  }
+  .container1 {
+    position:absolute;
+    left: 15%;
+    top: 215%;
+    transform: translate(-50%,-50%);
+  }
+
   h1{
     font-family:Handwrite;
     z-index: 1;
@@ -64,7 +84,7 @@
 
   h2{
     font-weight: 500;
-    font-size: 10vw;
+    font-size: 8vw;
     z-index: 0;
     color: #1C171A;
     text-align: left;
@@ -76,7 +96,7 @@
   h3{
     font-family:ENG1;
     font-weight: 500;
-    font-size: 10vw;
+    font-size: 8vw;
     z-index: 0;
     color: #1C171A;
     text-align: right;
