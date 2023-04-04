@@ -16,9 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    mix-blend-mode: color-dodge;
-    opacity: 0.9;
+    z-index: -1;
     perspective: 1000px
   }
 
@@ -28,4 +26,11 @@
     object-fit: contain; 
 
   }
- 
+  .container0 {
+    width:auto;
+    height: auto;
+    position:absolute;
+    top:100vw;
+    left: 15vw;
+    transform: translate(-50%,-50%);
+  }

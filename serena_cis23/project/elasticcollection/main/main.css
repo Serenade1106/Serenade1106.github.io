@@ -7,12 +7,15 @@
     src: url(LiuJianMaoCao-Regular.ttf);
   }
   
-
+  @font-face {
+    font-family:ENG1;
+    src: url(BigCaslon-Medium.woff2);
+  }
+  
   html {
     background-color:rgba(127, 38, 56, 1);
     ; 
   }
-
 
   .image-container {
     display: flex;
@@ -21,8 +24,46 @@
     height: 100vh;
     mix-blend-mode: multiply;
     opacity: 0.9;
-    perspective: 1000px
+    perspective: 1000px;
+    z-index: -1;
+
   }
+
+  .container2 {
+    position:absolute;
+    left:85VW;
+    top: 10VW;
+    transform: translate(-50%,-50%);
+  }
+  .container1 {
+    position:absolute;
+    left: 15vw;
+    top: 10vw;
+    transform: translate(-50%,-50%);
+  }
+  h2{
+    font-weight: 500;
+    font-size: 8vw;
+    z-index: 0;
+    color: #1C171A;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    font-family:ENG1;
+  }
+
+  h3{
+    font-family:ENG1;
+    font-weight: 500;
+    font-size: 8vw;
+    z-index: 0;
+    color: #1C171A;
+    text-align: right;
+    position: relative;
+    display: inline-block;
+
+  }
+
 
   img {
     max-width: 100%;
@@ -31,3 +72,17 @@
 
   }
  
+  .container0 {
+    position:absolute;
+    top:370vw;
+    left: 15vw;
+    transform: translate(-50%,-50%);
+  }
+
+  p{
+    font-family:Handwrite;
+    font-weight: 400;
+    font-size: 15vw;
+    color: #090b0c;
+    text-decoration: none;
+  }

@@ -9,20 +9,13 @@ function renderItems(collection) {
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
-				<a href="${item.linkTo}">
-					link
-				</a>
-				
-				<img src="${item.imageUrl}" />
+			<a href="${item.linkTo}">
+			<p><em>${item.singleword}</em></p>
+		</a>
+		
 
-				<p>${item.author}</p>
 
-				<p><em>${item.singleword}</em></p>
-
-				<a href="${item.imageOriginalUrl}">
-				
-					<p>${item.year} / 10 →</p>
-				</a>
+			
 			`
 			collectionList.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 
