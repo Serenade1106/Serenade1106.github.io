@@ -3,8 +3,8 @@
   }
 
   @font-face {
-    font-family:Handwrite;
-    src: url(LiuJianMaoCao-Regular.ttf);
+    font-family:ENG1;
+    src: url(BigCaslon-Medium.woff);
   }
 
   html {
@@ -26,11 +26,29 @@
     object-fit: contain; 
 
   }
-  .container0 {
-    width:auto;
-    height: auto;
-    position:absolute;
-    top:100vw;
-    left: 15vw;
-    transform: translate(-50%,-50%);
+
+  #collection {
+    display:flex;
+    flex-wrap:wrap;
+    flex: 1 0 21%; /* explanation below */
+  }
+
+  img {
+    max-width:300px;
+    width:100%;
+  }
+
+  p {
+    margin-top:0;
+    text-align:center;
+  }
+
+a {
+  color:#1C171A;
+  text-decoration:none;
+}
+
+  .item {
+    margin-right:10px;
+    margin-left:20px ;
   }
