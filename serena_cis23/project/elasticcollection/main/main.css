@@ -21,12 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    mix-blend-mode: multiply;
-    opacity: 0.9;
-    perspective: 1000px;
     z-index: -1;
-
   }
 
   .container2 {
@@ -73,11 +68,10 @@
   }
  
   .container0 {
-    position:absolute;
-    top:370vw;
-    left: 15vw;
-    transform: translate(-50%,-50%);
+      display: grid;
+      flex-wrap: wrap;
   }
+
 
   p{
     font-family:Handwrite;
@@ -85,4 +79,5 @@
     font-size: 15vw;
     color: #090b0c;
     text-decoration: none;
+  
   }
