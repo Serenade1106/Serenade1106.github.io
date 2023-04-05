@@ -12,6 +12,7 @@ function renderItems(collection) {
 			<a href="${item.linkTo}">
 			<p><em>${item.singleword}</em></p>
 		</a>
+		<h1>${item.engword}</h1>
 			`
 			collectionList.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 
