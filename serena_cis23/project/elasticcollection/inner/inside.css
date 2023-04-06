@@ -19,6 +19,15 @@
     font-family:COR;
     src: url(CormorantGaramond-Medium.ttf);
   }
+  @font-face {
+    font-family:CHI;
+    src: url(SourceHanSerifCN-Light-Alphabetic.woff2);
+  }
+
+  @font-face {
+    font-family:chi;
+    src: url(思源宋体-Light.otf);
+  }
 
 
   html {
@@ -72,7 +81,8 @@
   }
 
   h3{
-    font-family:Bic;
+    
+    font-family:chi;
     font-weight: 500;
     font-size: 2vw;
     line-height: 160%;
@@ -81,7 +91,7 @@
   }
 
   h4{
-    font-family:COR;
+    font-family:chi;
     font-weight: 500;
     font-size: 2vw;
     line-height: 160%;
