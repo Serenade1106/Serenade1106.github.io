@@ -1,17 +1,57 @@
 html{
     background-color: black;
 }
-h3{
+@font-face {
+    font-family:title;
+    src: url(GlowSansSC-Normal-Medium.otf);
+  }
+
+  @font-face {
+    font-family:body;
+    src: url(GlowSansSC-Normal-Regular.otf);
+  }
+
+  @font-face {
+    font-family:ENGbody;
+    src: url(MYRIADPRO-REGULAR.OTF);
+  }
+
+  @font-face {
+    font-family:ENGtitle;
+    src: url(MYRIADPRO-SEMIBOLD.OTF);
+  }
+
+
+  h3{
     color:white;
+    font-family:body;
+    font-size: 18px;
+    line-height: 2;
+}
+
+h4{
+    color:white;
+    font-family:ENGbody;
+    font-size: 18px;
+    line-height: 2;
+}
+
+h2{
+    color:white;
+    font-family:title;
+    text-align: center; 
+    font-size: 2vw;
+    font-family:ENGtitle;
 }
 h1{
     color:white;
+    font-family:title;
     text-align: center; 
+    font-size: 10vw;
 }
+
 .responsive {
     width: 90%;
     height: auto;
-    
-    
     
   }
