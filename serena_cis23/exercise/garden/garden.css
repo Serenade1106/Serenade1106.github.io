@@ -23,6 +23,7 @@ html{
 
 
   h3{
+    padding:10vw;
     color:white;
     font-family:body;
     font-size: 18px;
@@ -30,6 +31,7 @@ html{
 }
 
 h4{
+    padding:10vw;
     color:white;
     font-family:ENGbody;
     font-size: 18px;
@@ -51,7 +53,10 @@ h1{
 }
 
 .responsive {
-    width: 90%;
-    height: auto;
-    
+  
+   
+    position: relative;
+    text-align: center
   }
+    
+  
