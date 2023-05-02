@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Inkn;
+    src: url(InknutAntiqua-Regular.ttf);
+  }
+
+
+  body {
+    background: #090b0c;
+  }
+
+  img {
+    width: 10%;
+    animation: blink 0.5s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+
+  h2{
+    font-weight: 500;
+    font-size: 3vw;
+    z-index: 0;
+    color: #ffffff87;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    font-family:Inkn;
+  }
+
+
+  h3{
+    font-family:Inkn;
+    font-size: 3vw;
+    z-index: 0;
+    color: #ffffff5a;
+    position: relative;
+    display: inline-block;
+    margin-top: 1%;
+
+  }
+
+  
+

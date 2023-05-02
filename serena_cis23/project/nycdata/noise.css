@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Inkn;
+    src: url(InknutAntiqua-Regular.ttf);
+  }
+
+
+  body {
+    background: #090b0c;
+  }
+
+  body {
+    background-image: url('backpage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  img {
+    animation: rotate 3s linear infinite;
+    width: 36%;
+  }

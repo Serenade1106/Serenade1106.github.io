@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Inkn;
+    src: url(InknutAntiqua-Regular.ttf);
+  }
+
+
+  body {
+    background: #090b0c;
+  }
+
+  body {
+    background-image: url('6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+ 
