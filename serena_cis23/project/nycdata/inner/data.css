@@ -51,7 +51,7 @@
     font-weight: 500;
     font-size: 3vw;
     z-index: 0;
-    color: #ffffff87;
+    color: #ffffff;
     text-align: left;
     position: relative;
     display: inline-block;
@@ -67,7 +67,6 @@
     position: relative;
     display: inline-block;
     margin-top: 1%;
-
   }
 
   .details {
