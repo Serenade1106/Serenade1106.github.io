@@ -7,15 +7,31 @@
     src: url(InknutAntiqua-Regular.ttf);
   }
 
+  @font-face {
+    font-family:Ubu;
+    src: url( Ubuntu-LightItalic.ttf);
+  }
+ 
 
   body {
     background: #090b0c;
   }
 
   img {
-    width: 10%;
-    animation: blink 0.5s infinite;
+    width: 9%;
+    height: 9%;
+    animation: blink 1s infinite;
+    position:relative
   }
+  
+
+  #collection {
+    display:flex;
+    flex-wrap:wrap;
+    flex: 1 0 21%; 
+    margin-left: 3vw;
+  }
+
 
   @keyframes blink {
     0% {
@@ -54,5 +70,17 @@
 
   }
 
-  
+  .details {
+    background-color:rgb(255, 255, 255);
+    max-width:500px;
+    opacity:0;
+    font-family:Ubu;
+    text-align: center;
+    font-size: 16px;
+  }
 
+
+  .details:hover {
+    opacity:0.5;
+    
+  }

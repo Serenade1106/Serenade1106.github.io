@@ -11,6 +11,9 @@ function renderItems(collection) {
 			`
 
 			<img src="${item.complaint_type}" />
+			<div class="details"><p>${item.street_name}</p>
+			<p>${item.created_date}</p>
+			</div>
 
 			`
 			collectionList.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert

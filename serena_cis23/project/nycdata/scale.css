@@ -8,14 +8,46 @@
   }
 
 
-  body {
-    background: #090b0c;
+p{
+  font-family:Inkn;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #FFFFFF;
   }
 
-  body {
-    background-image: url('6.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+  .container0{
+    position: absolute;
+    left: auto;
+    z-index: -1;
+    object-fit: contain;
+    
   }
+  
+.container1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+
+}
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.container3{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.container4{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container{
+  position: absolute;
+  bottom: 0;
+  left: auto;
+}
 
  
