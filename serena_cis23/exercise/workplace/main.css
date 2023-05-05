@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:COR;
+    src: url( CormorantGaramond-MediumItalic.ttf);
+  }
+
+  @font-face {
+    font-family:title;
+    src: url(CormorantGaramond-Bold.ttf);
+  }
+  body{
+    background-color: black;
+  }
+  h1{
+    font-family:title;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3.6vw;
+  }
+  h2{
+    font-family:title;
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.6vw;
+  }
+  h3{
+    margin-left: 50%;
+    font-size: 1.5vw;
+  }
+  h4{
+    margin-left: 20%;
+    font-size: 1.5vw;
+  }
+
+a {
+    text-decoration: none;
+    font-family:COR;
+    color: azure;
+
+  }
+ 
