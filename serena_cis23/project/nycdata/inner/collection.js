@@ -9,10 +9,12 @@ function renderItems(collection) {
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
-
-			<img src="${item.complaint_type}" />
-			<div class="details"><p>${item.street_name}</p>
-			<p>${item.created_date}</p>
+			<div class="details">
+				<img class="image" src="${item.complaint_type}" />
+				<div class="hover-info">
+					<p>${item.street_name}</p>
+					<p>${item.created_date}</p>
+				</div>
 			</div>
 
 			`

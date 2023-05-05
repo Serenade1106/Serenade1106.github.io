@@ -30,6 +30,7 @@
     flex-wrap:wrap;
     flex: 1 0 21%; 
     margin-left: 3vw;
+    gap: 1vw;
   }
 
 
@@ -70,16 +71,30 @@
   }
 
   .details {
-    background-color:rgb(255, 255, 255);
+    /* background-color:rgb(255, 255, 255); */
     max-width:500px;
-    opacity:0;
+    /* opacity:0; */
     font-family:Ubu;
     text-align: center;
     font-size: 16px;
+    position: relative;
   }
 
 
-  .details:hover {
-    opacity:0.5;
-    
+  .image {
+    width: 10vw;
+    height: auto;
+  }
+
+  .hover-info {
+    display: none;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 10000000000000000000000000000000;
+  }
+  .details:hover > .hover-info {
+    display: block;
   }

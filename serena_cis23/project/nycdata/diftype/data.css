@@ -1,86 +1,100 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family:Inkn;
+  src: url(InknutAntiqua-Regular.ttf);
+}
+
+@font-face {
+  font-family:Ubu;
+  src: url( Ubuntu-LightItalic.ttf);
+}
+
+
+body {
+  background: #090b0c;
+}
+
+img {
+  width: 9%;
+  height: 9%;
+  animation: blink 1s infinite;
+  position:relative
+}
+
+
+#collection {
+  display:flex;
+  flex-wrap:wrap;
+  flex: 1 0 21%; 
+  margin-left: 3vw;
+  gap: 1vw;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
   }
-
-  @font-face {
-    font-family:Inkn;
-    src: url(InknutAntiqua-Regular.ttf);
+  50% {
+    opacity: 0.5;
   }
-
-  @font-face {
-    font-family:Ubu;
-    src: url( Ubuntu-LightItalic.ttf);
+  100% {
+    opacity: 1;
   }
- 
-
-  body {
-    background: #090b0c;
-  }
-
-  img {
-    width: 9%;
-    height: 9%;
-    animation: blink 1s infinite;
-    position:relative
-  }
-  
-
-  #collection {
-    display:flex;
-    flex-wrap:wrap;
-    flex: 1 0 21%; 
-    margin-left: 3vw;
-  }
+}
 
 
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
-  
-
-  h2{
-    font-weight: 500;
-    font-size: 3vw;
-    z-index: 0;
-    color: #ffffff87;
-    text-align: left;
-    position: relative;
-    display: inline-block;
-    font-family:Inkn;
-  }
+h2{
+  font-weight: 500;
+  font-size: 3vw;
+  z-index: 0;
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  font-family:Inkn;
+}
 
 
-  h3{
-    font-family:Inkn;
-    font-size: 3vw;
-    z-index: 0;
-    color: #ffffff5a;
-    position: relative;
-    display: inline-block;
-    margin-top: 1%;
+h3{
+  font-family:Inkn;
+  font-size: 3vw;
+  z-index: 0;
+  color: #ffffff5a;
+  position: relative;
+  display: inline-block;
+  margin-top: 1%;
+}
 
-  }
+.details {
+  /* background-color:rgb(255, 255, 255); */
+  max-width:500px;
+  /* opacity:0; */
+  font-family:Ubu;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
 
-  .details {
-    background-color:rgb(255, 255, 255);
-    max-width:500px;
-    opacity:0;
-    font-family:Ubu;
-    text-align: center;
-    font-size: 16px;
-  }
 
+.image {
+  width: 10vw;
+  height: auto;
+}
 
-  .details:hover {
-    opacity:1;
-    
-  }
+.hover-info {
+  display: none;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 10000000000000000000000000000000;
+}
+.details:hover > .hover-info {
+  display: block;
+}

@@ -8,11 +8,14 @@ function renderItems(collection) {
 		if (item.complaint_type === 'blue.png') {
 			const itemDetails =
 				`
-				<img src="${item.complaint_type}" />
 				<div class="details">
+				<img class="image" src="${item.complaint_type}" />
+				<div class="hover-info">
 					<p>${item.street_name}</p>
 					<p>${item.created_date}</p>
 				</div>
+			</div>
+
 				`
 			collectionList.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 		}

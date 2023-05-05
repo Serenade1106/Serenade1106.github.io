@@ -6,13 +6,26 @@
     font-family:Inkn;
     src: url(InknutAntiqua-Regular.ttf);
   }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -7vw;
+  }
+  .item { 
+    padding: 5vw;
+    width: 420px;
+  }
+/* .item */
 
 
-p{
+a{
   font-family:Inkn;
-  font-size: 30px;
+  font-size: 2vw;
   text-transform: capitalize;
   color: #FFFFFF;
+  text-decoration: none;
+
   }
 
   .container0{
@@ -20,7 +33,10 @@ p{
     left: auto;
     z-index: -1;
     object-fit: contain;
-    
+  }
+  .container0 img {
+    height: 100vh;
+    /* overscroll-x: hidden; */
   }
   
 .container1{
@@ -29,20 +45,7 @@ p{
   margin-left: 30%;
 
 }
-.container2{
-  display: flex;
-  flex-wrap: wrap;
 
-}
-.container3{
-  display: flex;
-  flex-wrap: wrap;
-
-}
-.container4{
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .container{
   position: absolute;
@@ -50,4 +53,3 @@ p{
   left: auto;
 }
 
- 
