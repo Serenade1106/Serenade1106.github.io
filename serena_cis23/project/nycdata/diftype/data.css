@@ -79,16 +79,27 @@ h3{
   font-size: 16px;
   position: relative;
 }
-
+@media screen and (min-width: 450px) {
 
 .image {
-  width: 10vw;
+  width: 6vw;
   height: auto;
 }
 
+}
+@media screen and (max-width: 449px) {
+
+  .image {
+    width: 9vw;
+    height: auto;
+  }
+  
+  }
 .hover-info {
   display: none;
   position: absolute;
+  width: 200px;
+  height: 200px;
   color: rgb(0, 0, 0);
   top: 0;
   left: 0;
