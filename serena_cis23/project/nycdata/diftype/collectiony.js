@@ -12,6 +12,7 @@ function renderItems(collection) {
 				<img class="image" src="${item.complaint_type}" />
 				<div class="hover-info">
 					<p>${item.street_name}</p>
+					<p>${item.descriptor}</p>
 					<p>${item.created_date}</p>
 				</div>
 			</div>
