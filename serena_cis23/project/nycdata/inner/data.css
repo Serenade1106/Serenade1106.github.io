@@ -17,6 +17,7 @@
     background: #090b0c;
   }
   @media screen and (min-width: 450px) {
+
   img {
     width: 9%;
     height: 9%;
@@ -127,6 +128,13 @@
     
   }
 
+  .topic {
+    width:100%;
+    font-family:Inkn;
+
+    color:rgb(255, 255, 255);
+  
+  }
   .hover-info {
     display: none;
     position: absolute;
@@ -343,6 +351,13 @@
         height: auto;
         
     
+      }
+      .topic {
+        width:100%;
+        font-family:Inkn;
+        z-index:1;
+        font-size: 1px;
+        color:rgb(255, 255, 255);
       }
     
     }
