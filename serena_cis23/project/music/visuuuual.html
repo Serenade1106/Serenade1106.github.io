@@ -1,0 +1,28 @@
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<div id="waveform"></div>
+<button id="playPause">PLAY / PAUSE</button>
+<script>
+    // 初始化 Wavesurfer
+    const wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'white',
+        progressColor: 'black',
+        backend: 'MediaElement',
+    });
+
+    // 加载音频文件
+    wavesurfer.load('fish.mp3');
+
+    // 获取播放/暂停按钮元素
+    const playPauseButton = document.getElementById('playPause');
+    
+    // 播放/暂停按钮点击事件
+    playPauseButton.addEventListener('click', function() {
+        wavesurfer.playPause();
+    });
+
+    // 每帧动画更新波形图
+    wavesurfer.on('audioprocess', function() {
+        wavesurfer.drawer.progress(wavesurfer.backend.getPlayedPercents());
+    });
+</script>

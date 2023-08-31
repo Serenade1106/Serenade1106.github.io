@@ -1,0 +1,15 @@
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<div id="waveform"></div>
+
+<script>
+    // 初始化 Wavesurfer
+    const wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'blue',
+        progressColor: 'purple',
+        backend: 'MediaElement',
+    });
+
+    // 加载音频文件
+    wavesurfer.load('fish.mp3');
+</script>
