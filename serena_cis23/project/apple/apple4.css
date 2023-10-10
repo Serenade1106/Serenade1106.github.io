@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Playfair;
+    src: url(playfair.ttf);
+  }
+
+  /*电脑*/
+  @media screen and (min-width: 450px) {
+
+    body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content {
+        width: 100%;
+        white-space: nowrap;
+        animation: slide 15s linear infinite;
+        animation-play-state: running; 
+        animation-delay: -5s; 
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+
+    
+
+
+  body {
+    padding: 0;
+    width: 5239px; 
+    height: 982px; 
+    margin: 0; 
+    overflow: auto; 
+}
+  .text {
+    font-size: 16px;
+    color: white;
+    font-family:Playfair;
+}
+        .rectangle {
+            width: 4106px;
+            height: 32px;
+            background-color: #A60000; 
+            position: absolute;
+            left: 434px; 
+            top: 282px;  
+        }
+        .brectangle {
+            width: 4106px;
+            height: 32px;
+            background-color: #B30000; 
+            position: absolute;
+            left: 554px; 
+            top: 324px;    
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px; 
+        }
+        .crectangle {
+            width: 4106px;
+            height: 32px;
+            background-color: #B90000; 
+            position: absolute;
+            left: 636px; 
+            top: 295px;    
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px; 
+        }
+
+        .drectangle {
+            width: 4106px;
+            height: 32px;
+            background-color: #F20000; 
+            position: absolute;
+            left: 371px; 
+            top: 762px;    
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px; 
+        }
+
+
+        
+
+
+  .sweetrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #990000;
+    position: absolute;
+    left: 515px; 
+    top: 167px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.healthyrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #A00000; 
+    position: absolute;
+    left: 487px;
+    top: 229px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.Autumnalrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF9999; 
+    position: absolute;
+    left: 310px;
+    top: 282px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+
+
+
+.Nostalgicrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF7F7F; 
+    position: absolute;
+    left: 244px;
+    top: 338px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+
+.FRESHNESSrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF6666; 
+    position: absolute;
+    left: 217px;
+    top: 414px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.Petrichorrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF4C4C; 
+    position: absolute;
+    left: 203px;
+    top: 494px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.Comfortingrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF3333; 
+    position: absolute;
+    left: 217px;
+    top: 573px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+.FFrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF1919; 
+    position: absolute;
+    left: 244px;
+    top: 651px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+.Winteryrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #FF0000; 
+    position: absolute;
+    left: 296px;
+    top: 719px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.CHILDHOODrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #EC0000; 
+    position: absolute;
+    left: 472px;
+    top: 784px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.aurectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #A60000;
+    position: absolute;
+    left: 434px; 
+    top: 282px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.norectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #AC0000;
+    position: absolute;
+    left: 473px; 
+    top: 338px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.frrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #C60000;
+    position: absolute;
+    left: 745px; 
+    top: 414px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.petrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #CC0000;
+    position: absolute;
+    left: 758px; 
+    top: 505px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.corectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #D20000;
+    position: absolute;
+    left: 731px; 
+    top: 586px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.frectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #D20000;
+    position: absolute;
+    left: 703px; 
+    top: 660px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.wrectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #DF0000;
+    position: absolute;
+    left: 650px; 
+    top: 719px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+
+.crectangle {
+    width: 4106px;
+    height: 32px;
+    background-color: #E50000;
+    position: absolute;
+    left: 572px; 
+    top: 781px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    
+}
+  }
+
+  /*手机*/
+  @media screen and (max-width: 449px) {
+    h1{
+      font-family:Inkn;
+      color: #000000;
+      font-size: 5vw;
+      transform: rotate(90deg);
+      margin-top: 100vw;
+      margin-left: -85vw;
+      font-weight: 400;
+      line-height: 93px;
+      text-transform: uppercase;
+      position: relative;
+      
+    }
+
+}
