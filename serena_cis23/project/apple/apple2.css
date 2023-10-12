@@ -10,23 +10,13 @@
   /*电脑*/
   @media screen and (min-width: 450px) {
 
-
-    @keyframes blink {
-        0% { opacity: 1; }
-        50% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-    
-    .text {
-        animation: blink 5s infinite; 
-    }
-
   body {
     width: 5239px; 
     height: 982px; 
     margin: 0; 
     overflow: auto; 
     zoom: 0.8; 
+
 }
   .text {
     font-size: 16px;
@@ -219,7 +209,7 @@
 .aurectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #A60000;
     position: absolute;
     left: 434px; 
     top: 282px; 
@@ -233,7 +223,7 @@
 .norectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #AC0000;
     position: absolute;
     left: 473px; 
     top: 338px; 
@@ -247,7 +237,7 @@
 .frrectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #C60000;
     position: absolute;
     left: 745px; 
     top: 414px; 
@@ -261,7 +251,7 @@
 .petrectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #CC0000;
     position: absolute;
     left: 758px; 
     top: 505px; 
@@ -275,7 +265,7 @@
 .corectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #D20000;
     position: absolute;
     left: 731px; 
     top: 586px; 
@@ -289,7 +279,7 @@
 .frectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #D20000;
     position: absolute;
     left: 703px; 
     top: 660px; 
@@ -303,7 +293,7 @@
 .wrectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #DF0000;
     position: absolute;
     left: 650px; 
     top: 719px; 
@@ -317,7 +307,7 @@
 .crectangle {
     width: 4106px;
     height: 32px;
-    background-color: #ffffff;
+    background-color: #E50000;
     position: absolute;
     left: 572px; 
     top: 781px; 
