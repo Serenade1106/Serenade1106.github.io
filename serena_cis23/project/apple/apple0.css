@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family:Playfair;
+    src: url(playfair.ttf);
+  }
+  @font-face {
+    font-family:Ink;
+    src: url(ink.ttf);
+  }
+  @font-face {
+    font-family:Inklight;
+    src: url(InknutAntiqua-Light.ttf);
+  }
+
+
+  /*电脑*/
+  @media screen and (min-width: 450px) {
+    
+  body {
+    width: 5239px; 
+    height: 982px; 
+    margin: 0; 
+    overflow: auto; 
+    zoom: 0.7; 
+    font-family:Ink;
+}
+  .text {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family:Playfair;
+}
+#createRectanglesButton {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family:Inklight;
+}
+
+#scrollButton {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family:Inklight;
+}
+
+.position-button {
+    position: absolute;
+    top:150px;
+    left: 4600px;
+    background-color: rgb(19, 143, 19);
+    font-family:Inklight;
+}
+    
+    .rectangle {
+        width: 4106px;
+        height: 32px;
+        position: absolute;
+        left: 515px; 
+        top: 167px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px; 
+        transition: background-color 1s ease;
+        
+        }
+
+        .white {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .red {
+            background-color: #990000;
+        }
+        
+        .black {
+            color: black;
+        }
+        
+        .white-text {
+            color: white;
+        }
+    }

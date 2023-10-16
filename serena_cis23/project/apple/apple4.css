@@ -4,7 +4,11 @@
 
   @font-face {
     font-family:Playfair;
-    src: url(playfair.ttf);
+    src: url(InknutAntiqua-Regular.ttf);
+  }
+  @font-face {
+    font-family:Inklight;
+    src: url(InknutAntiqua-Light.ttf);
   }
 
   /*电脑*/
@@ -14,7 +18,7 @@
         overflow: hidden;
         margin: 0;
         padding: 0;
-        zoom: 0.8; 
+        zoom: 0.7; 
     }
     
     .content {
@@ -32,9 +36,13 @@
             transform: translateX(-100%);
         }
     }
-
-
-    
+    .position-button {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgb(255, 255, 255);
+        font-family:Inklight;
+    }
 
 
   body {
@@ -54,7 +62,7 @@
             height: 32px;
             background-color: #A60000; 
             position: absolute;
-            left: 434px; 
+            left: 450px; 
             top: 282px;  
         }
         .brectangle {
@@ -335,7 +343,7 @@
     height: 32px;
     background-color: #E50000;
     position: absolute;
-    left: 572px; 
+    left: 608px; 
     top: 781px; 
     display: flex;
     justify-content: space-between;
