@@ -66,6 +66,94 @@ for (let i = 0; i < 10; i++) {
 }
 
 
+
+const showWordsButton = document.getElementById('showWordsButton');
+
+showWordsButton.addEventListener('click', () => {
+    const words = ['AI','A 6-YEAR-OLD KID','AN OBSERVER WHO DRAWS','A GIRL STUDYING ABROAD IN A FOREIGN COUNTRY','AI','SOMEONE WHO IS TAKING A CLASS BUT CANNOT UNDERSTAND IT','BEAUTIFUL GIRL','AI', 'BUSINESS MAJOR ROMANTIC BOY','AN INTJ WHO DOES NOT WANT TO DO HER HOMEWORK'];
+
+    const wordPositions = [
+        { left: '4591px', top: '165px' },
+        { left: '4395px', top: '227px' },
+        { left: '4454px', top: '292px' },
+        { left: '4056px', top: '335px' },
+        { left: '4824px', top: '410px' },
+        { left: '4200px', top: '500px' },
+        { left: '4660px', top: '582px' },
+        { left: '4777px', top: '655px' },
+        { left: '4420px', top: '715px' },
+        { left: '4150px', top: '775px' }
+    ];
+
+    for (let i = 0; i < words.length; i++) {
+        const textElement = document.createElement('div');
+        textElement.classList.add('text-box', 'white-text');
+        textElement.textContent = words[i];
+        textElement.style.position = 'absolute';
+        textElement.style.left = wordPositions[i].left;
+        textElement.style.top = wordPositions[i].top;
+        textElement.style.whiteSpace = 'nowrap'; 
+        container.appendChild(textElement);
+    
+    }
+});
+
+
+const showSentenceButton = document.getElementById('showSentenceButton');
+
+const sentencePositions = [
+    { left: '1726px', top: '165px' },
+    { left: '1604px', top: '227px' },
+    { left: '1862px', top: '292px' },
+    { left: '1701px', top: '335px' },
+    { left: '1793px', top: '410px' },
+    { left: '1957px', top: '500px' },
+    { left: '1560px', top: '582px' },
+    { left: '1915px', top: '655px' },
+    { left: '1829px', top: '715px' },
+    { left: '1698px', top: '775px' }
+];
+
+const sentences = [
+    '“At its peak ripeness, the fragrance is characterized by a delightful sugary aroma attributed to natural sugars like glucose and fructose.”',
+
+    '"An apple a day keeps the doctor away"',
+
+    '“Reminds me of fall and slightly chilly weather. The red ones are always sweet and discreet, while the green ones are vibrant with some tartness.”',
+
+    '“It smells sweet and has its own unique flavor. It reminds me of the previous Christmas Eve when the family would get together every year. Symbolizing peace and quiet.”',
+
+    '“The scent is refreshing, reminiscent of the air after a rain, and is widely appreciated for its invigorating and pleasant qualities. Many people utilize it to eliminate odors in various settings, such as kitchens.”',
+
+    '“It reminds me of a smell after it rains, the stickiness of dirt mixed with rain. I can then think of the excitement I once I had when I was picking from the tree.”',
+
+    ' “As the aroma of the oven is turned on, a taste of happiness surrounds me. I love making my own pies, and the smell of fresh, bubbling, fresh fruit turning into caramelized, cinnamon-scented pies reminds me of walking from a freezing snowy field into a cabin with a campfire in the middle of winter.” ',
+
+    ' “Keen noses might discern understated fruity and floral undertones within the fragrance, bestowing it with a multi-dimensional quality that is truly pleasing. ”',
+
+    '“Smells like winter snow outside your house, a frozen lake, a starry Christmas town on Christmas Eve.”',
+
+    '“It always reminds me of the taste of home, the sweetness of a splash of red that I saw set on the dining room table when I came home from school as a child.”'
+];
+
+showSentenceButton.addEventListener('click', () => {
+    for (let i = 0; i < sentences.length; i++) {
+        const textElement = document.createElement('div');
+        textElement.classList.add('text-box','sentence-text');
+        textElement.textContent = sentences[i];
+        textElement.style.position = 'absolute';
+        textElement.style.left = sentencePositions[i].left;
+        textElement.style.top = sentencePositions[i].top;
+        textElement.style.whiteSpace = 'nowrap'; 
+        container.appendChild(textElement);
+    }
+});
+
+
+
+
+
+
 document.getElementById('createRectanglesButton').addEventListener('click', function () {
     const container = document.getElementById('container');
 
@@ -84,6 +172,7 @@ document.getElementById('createRectanglesButton').addEventListener('click', func
         { left: '554px', top: '324px' },
         { left: '371px', top: '762px' },
     ];
+  
 
     for (let i = 0; i < 11; i++) {
         const rectangle = document.createElement('div');
@@ -110,8 +199,17 @@ document.getElementById('createRectanglesButton').addEventListener('click', func
 });
 
 
+
+
+
 const button = document.getElementById('scrollButton');
 
 button.addEventListener('click', function () {
     window.scrollTo(document.body.scrollWidth, 0);
+});
+
+const leftButton = document.getElementById('scrollLeftButton'); 
+
+leftButton.addEventListener('click', function () {
+    window.scrollTo(0, 0);
 });

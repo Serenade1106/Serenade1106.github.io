@@ -13,6 +13,11 @@
   @font-face {
     font-family:Inklight;
     src: url(InknutAntiqua-Light.ttf);
+  }  
+  
+  @font-face {
+    font-family:regular;
+    src: url(regular.ttf);
   }
 
 
@@ -27,16 +32,26 @@
     zoom: 0.7; 
     font-family:Ink;
 }
+
   .text {
     font-size: 16px;
     color: rgb(0, 0, 0);
     font-family:Playfair;
 }
+
+.white-text {
+  color: white;
+}
+
+.sentence-text{
+  color: white;
+  font-family:regular;
+}
 #createRectanglesButton {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(190, 47, 47);
     font-family:Inklight;
 }
 
@@ -48,14 +63,31 @@
     font-family:Inklight;
 }
 
-.position-button {
+#scrollLeftButton {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family:Inklight;
+}
+
+#showWordsButton{
     position: absolute;
     top:150px;
-    left: 4600px;
-    background-color: rgb(19, 143, 19);
+    left: 4622px;
+    background-color: rgb(59, 150, 82);
     font-family:Inklight;
 }
     
+#showSentenceButton{
+  position: absolute;
+  top:150px;
+  left: 447px;
+  background-color: rgb(59, 150, 82);
+  font-family:Inklight;
+
+}
+  
     .rectangle {
         width: 4106px;
         height: 32px;
