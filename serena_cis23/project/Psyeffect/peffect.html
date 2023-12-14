@@ -1,31 +1,62 @@
+User
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title></title>
+		<title>ME&WE</title>
 		<link rel="stylesheet" href="effect.css" />
+		<script src="apple.js"></script>
 	</head>
 	<body>
-		<section>
-			<a href="Bystander_Effect.html" >
-				<div><img src="pic/BE.jpg" alt="" /></div>
-			  </a>
-			<a href=".html" >
-				<div><img src="pic/DE.jpg" alt="" /></div>
-			  </a>
-			<a href=".html" >
-				<div><img src="pic/HE.jpg" alt="" /></div>
-			  </a>
-
 		
-			<div><img src="pic/ISI.jpg" alt="" /></div>
-			<div><img src="pic/OE.jpg" alt="" /></div>
-			<div><img src="pic/PE.jpg" alt="" /></div>
-			<div><img src="pic/SE.jpg" alt="" /></div>
-			<div><img src="pic/SPE.jpg" alt="" /></div>
-			<div><img src="pic/VE.jpg" alt="" /></div>
-			<div><img src="pic/ZE.jpg" alt="" /></div>
-		</section>
+
+	<div class="image-wrapper" style="transform: rotateY(360deg) translateZ(300px);" onclick="toggleGif('BE', event)">
+		<img src="pic/BE.jpg" alt="" />
+	  </div>
+
+	  <div class="image-wrapper" style="transform: rotateY(36deg) translateZ(300px);" onclick="toggleGif('DE', event)">
+		<img src="pic/DE.jpg" alt="" />
+	  </div>
+	  
+
+	  <div class="image-wrapper" style="transform: rotateY(72deg) translateZ(300px);" onclick="toggleGif('HE', event)">
+		<img src="pic/HE.jpg" alt="" />
+	  </div>
+	  
+	  <div class="image-wrapper" style="transform: rotateY(108deg) translateZ(300px);" onclick="toggleGif('ISI', event)">
+		<img src="pic/ISI.jpg" alt="" />
+	  </div>
+	  
+	  <div class="image-wrapper" style="transform: rotateY(144deg) translateZ(300px);" onclick="toggleGif('OE', event)">
+		<img src="pic/OE.jpg" alt="" />
+	  </div>
+	  
+	  <div class="image-wrapper" style="transform: rotateY(180deg) translateZ(300px);" onclick="toggleGif('PE', event)">
+		<img src="pic/PE.jpg" alt="" />
+	  </div>
+
+	  <div class="image-wrapper" style="transform: rotateY(216deg) translateZ(300px);" onclick="toggleGif('SE', event)">
+		<img src="pic/SE.jpg" alt="" />
+	  </div>
+
+	  <div class="image-wrapper" style="transform: rotateY(252deg) translateZ(300px);" onclick="toggleGif('SPE', event)">
+		<img src="pic/SPE.jpg" alt="" />
+	  </div>
+
+	  <div class="image-wrapper" style="transform: rotateY(288deg) translateZ(300px);" onclick="toggleGif('VE', event)">
+		<img src="pic/VE.jpg" alt="" />
+	  </div>
+
+	  <div class="image-wrapper" style="transform: rotateY(323deg) translateZ(300px);" onclick="toggleGif('ZE', event)">
+		<img src="pic/ZE.jpg" alt="" />
+	  </div>
+	  
+	  
+	  
+  
+	<div class="gif-container" id="gifContainer"></div>
+  </div>
+
 	</body>
 </html>
