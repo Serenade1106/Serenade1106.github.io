@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thermal Imaging Effect with Custom Gradient</title>
+<style>
+  body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+  }
+  canvas {
+    max-width: 90%;
+    height: auto;
+  }
+  #controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .box {
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif; /* 统一字体 */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  #uploadLabel {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  #download {
+    background: linear-gradient(180deg, #0000ff, #00ff00, #ffff00, #ff7f00, #ff0000);
+    color: #ffffff;
+  }
+  #filename, #category-select {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .box:hover {
+    transform: scale(1.1);
+  }
+  input[type="file"] {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+<div id="controls">
+  <label for="upload" id="uploadLabel" class="box">Upload Pictures</label>
+  <input type="file" id="upload" accept="image/*">
+  <input type="text" id="filename" placeholder="Enter image name" class="box">
+  <button id="download" class="box">Download Image</button>
+  
+  <!-- Category selection dropdown -->
+  <select id="category-select" class="box">
+    <option value="" disabled selected>Select Category</option>
+    <option value="buildings.html">Buildings</option>
+    <option value="plants.html">Plants</option>
+    <option value="portraits.html">Portraits</option>
+    <option value="animals.html">Animals</option>
+    <option value="objects.html">Objects</option>
+    <option value="vehicles.html">Vehicles</option>
+    <option value="food.html">Food</option>
+    <option value="war.html">War</option>
+    <option value="natural_phenomena.html">Natural Phenomena</option>
+  </select>
+  <button id="save-category" class="box">Save Category</button>
+</div>
+
+<script>
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const upload = document.getElementById('upload');
+  const downloadButton = document.getElementById('download');
+  const filenameInput = document.getElementById('filename');
+  const categorySelect = document.getElementById('category-select');
+  const saveCategoryButton = document.getElementById('save-category');
+
+  upload.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const img = new Image();
+      img.src = URL.createObjectURL(file);
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+        applyThermalEffect();
+      };
+    }
+  });
+
+  function applyThermalEffect() {
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const data = imageData.data;
+
+    for (let i = 0; i < data.length; i += 4) {
+      const brightness = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+      const color = getThermalColor(brightness);
+      data[i] = color[0];
+      data[i + 1] = color[1];
+      data[i + 2] = color[2];
+    }
+    ctx.putImageData(imageData, 0, 0);
+  }
+
+  function getThermalColor(value) {
+    if (value < 32) return [0, 0, 128];
+    else if (value < 64) return [0, 0, 255];
+    else if (value < 96) return [0, 255, 0];
+    else if (value < 128) return [255, 255, 0];
+    else if (value < 160) return [255, 165, 0];
+    else if (value < 192) return [255, 0, 0];
+    else return [255, 20, 147];
+  }
+
+  downloadButton.addEventListener('click', () => {
+    const link = document.createElement('a');
+    const filename = filenameInput.value || 'thermal_image';
+    link.download = `${filename}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  });
+
+  saveCategoryButton.addEventListener('click', () => {
+    const selectedCategory = categorySelect.value;
+    if (selectedCategory) {
+      const imageDataUrl = canvas.toDataURL('image/png');
+      const categoryData = JSON.parse(localStorage.getItem(selectedCategory)) || [];
+      categoryData.push({ name: filenameInput.value || 'Untitled', imageUrl: imageDataUrl });
+      localStorage.setItem(selectedCategory, JSON.stringify(categoryData));
+
+      // Redirect to the selected category page
+      window.location.href = selectedCategory;
+    } else {
+      alert('Please select a category.');
+    }
+  });
+</script>
+
+</body>
+</html>
