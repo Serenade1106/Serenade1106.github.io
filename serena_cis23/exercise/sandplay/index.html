@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Sandbox Healing Platform</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #49c64e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        .sandbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .sandbox-area {
+            width: 90%;
+            height: 400px;
+            border: 2px dashed #aaa;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .sandbox-area img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            cursor: grab;
+        }
+        .category {
+            margin-bottom: 1rem;
+        }
+        select, button {
+            padding: 0.5rem 1rem;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button {
+            background-color: #49c64e;
+            color: white;
+        }
+        button:hover {
+            background-color: #49c64e;
+        }
+        select {
+            background-color: #fff;
+        }
+        .sandbox-area {
+    width: 90%;
+    height: 400px;
+    border: 4px solid #49c64e; /* 改为实线边框，增强可视化 */
+    background-color: #fff;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.sandbox-area img:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button {
+    background-color: #49c64e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #49c64e;
+    transform: scale(1.1);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Virtual Sandbox Healing Platform</h1>
+        <p>Express emotions, explore your inner self, and receive psychological support.</p>
+    </header>
+    <main>
+        <!-- Virtual Sandbox Section -->
+        <section class="sandbox">
+            <h2>Virtual Sandbox</h2>
+            <div class="sandbox-area" id="sandbox-area">
+               
+            </div>
+        </section>
+          <!-- button -->
+          <button onclick="clearSandbox()">Clear Sandbox</button>
+
+          <button onclick="saveSandboxState()">Save Sandbox</button>
+          <button onclick="loadSandboxState()">Load Sandbox</button>
+        <button onclick="resetPositions()">Reset Positions</button>
+
+        <!-- Categories -->
+        <div class="category">
+            <h3>Select a Plant</h3>
+            <select id="plant-select">
+                <option value="cactus.png" title="Symbolizes resilience and endurance.">Cactus</option>
+                <option value="sunflower.png" title="Represents happiness and positivity.">Sunflower</option>
+                <option value="pine_tree.png" title="Symbolizes longevity and peace.">Pine Tree</option>
+                <option value="willow_tree.png" title="Represents flexibility and emotional healing.">Willow Tree</option>
+                <option value="palm_tree.png" title="Symbolizes relaxation and exoticism.">Palm Tree</option>
+                <option value="rose.png" title="Represents love and passion.">Rose</option>
+                <option value="cherry_blossom.png" title="Symbolizes beauty and the fleeting nature of life.">Cherry Blossom</option>
+                <option value="tulip.png" title="Represents elegance and grace.">Tulip</option>
+                <option value="bamboo.png" title="Symbolizes strength and adaptability.">Bamboo</option>
+                <option value="dandelion.png" title="Represents hope and wishes.">Dandelion</option>
+            </select>
+            <button onclick="addPlant()">Add Plant</button>
+        </div>
+        <!-- Transportation Category -->
+        <div class="category">
+            <h3>Select a Vehicle</h3>
+            <select id="vehicle-select">
+                <option value="airplane.png" title="Symbolizes freedom and exploration.">Airplane</option>
+                <option value="bus.png" title="Represents community and shared journeys.">Bus</option>
+                <option value="train.png" title="Symbolizes progress and travel.">Train</option>
+                <option value="police_car.png" title="Represents law enforcement and protection.">Police Car</option>
+                <option value="ambulance.png" title="Symbolizes emergency care and urgency.">Ambulance</option>
+                <option value="ship.png" title="Represents adventure and exploration.">Ship</option>
+                <option value="sports_car.png" title="Symbolizes speed and ambition.">Sports Car</option>
+                <option value="water_truck.png" title="Represents service and utility.">Water Truck</option>
+                <option value="tractor.png" title="Symbolizes agriculture and hard work.">Tractor</option>
+                <option value="fire_truck.png" title="Represents bravery and rescue.">Fire Truck</option>
+            </select>
+            <button onclick="addVehicle()">Add Vehicle</button>
+        </div>
+         <!-- Building Category -->
+         <div class="category">
+            <h3>Select a Building</h3>
+            <select id="building-select">
+                <option value="castle.png" title="Represents strength and protection.">Castle</option>
+                <option value="cinema.png" title="Symbolizes entertainment and imagination.">Cinema</option>
+                <option value="restaurant.png" title="Represents nourishment and connection.">Restaurant</option>
+                <option value="park.png" title="Symbolizes relaxation and community.">Park</option>
+                <option value="church.png" title="Represents spirituality and faith.">Church</option>
+                <option value="mall.png" title="Symbolizes commerce and social interaction.">Mall</option>
+                <option value="stadium.png" title="Represents competition and unity.">Stadium</option>
+                <option value="school.png" title="Symbolizes education and growth.">School</option>
+                <option value="hospital.png" title="Represents healing and care.">Hospital</option>
+                <option value="amusement_park.png" title="Symbolizes joy and adventure.">Amusement Park</option>
+            </select>
+            <button onclick="addBuilding()">Add Building</button>
+        </div>
+          <!-- Categories -->
+          <div class="category">
+            <h3>Select an Animal</h3>
+            <select id="animal-select">
+                <option value="dog.png" title="Symbolizes loyalty and companionship.">Dog</option>
+                <option value="tiger.png" title="Represents strength and courage.">Tiger</option>
+                <option value="horse.png" title="Symbolizes freedom and energy.">Horse</option>
+                <option value="cow.png" title="Represents abundance and patience.">Cow</option>
+                <option value="swan.png" title="Symbolizes grace and transformation.">Swan</option>
+                <option value="rabbit.png" title="Represents fertility and gentleness.">Rabbit</option>
+                <option value="bear.png" title="Symbolizes protection and introspection.">Bear</option>
+                <option value="pig.png" title="Represents wealth and prosperity.">Pig</option>
+                <option value="shark.png" title="Symbolizes power and instinct.">Shark</option>
+                <option value="lion.png" title="Represents leadership and confidence.">Lion</option>
+            </select>
+            <button onclick="addAnimal()">Add Animal</button>
+        </div>
+        <!-- Items Category -->
+        <div class="category">
+            <h3>Select an Item</h3>
+            <select id="item-select">
+                <option value="bed.png" title="Symbolizes rest and comfort.">Bed</option>
+                <option value="telephone.png" title="Represents communication and connection.">Telephone</option>
+                <option value="guitar.png" title="Symbolizes creativity and expression.">Guitar</option>
+                <option value="drum_set.png" title="Represents rhythm and energy.">Drum Set</option>
+                <option value="scissors.png" title="Symbolizes precision and cutting ties.">Scissors</option>
+                <option value="basketball.png" title="Represents teamwork and play.">Basketball</option>
+                <option value="fire_extinguisher.png" title="Symbolizes safety and emergency response.">Fire Extinguisher</option>
+                <option value="sofa.png" title="Represents relaxation and comfort.">Sofa</option>
+                <option value="hourglass.png" title="Symbolizes time and reflection.">Hourglass</option>
+                <option value="paint_palette.png" title="Represents creativity and self-expression.">Paint Palette</option>
+            </select>
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+      
+    </main>
+
+    <script>
+        function resetPositions() {
+    const sandbox = document.getElementById('sandbox-area');
+    const images = sandbox.getElementsByTagName('img');
+    const sandboxWidth = sandbox.offsetWidth;
+    const sandboxHeight = sandbox.offsetHeight;
+
+    Array.from(images).forEach((img) => {
+        const randomX = Math.random() * (sandboxWidth - 60);
+        const randomY = Math.random() * (sandboxHeight - 60);
+        img.style.left = `${randomX}px`;
+        img.style.top = `${randomY}px`;
+    });
+}
+       function addSymbol(categoryId) {
+    const select = document.getElementById(categoryId);
+    const selectedValue = select.value;
+    const selectedText = select.options[select.selectedIndex].text;
+    const selectedTitle = select.options[select.selectedIndex].title;
+
+    const sandbox = document.getElementById('sandbox-area');
+    const img = document.createElement('img');
+    img.src = `images/${selectedValue}`;
+    img.alt = selectedText;
+    img.title = selectedTitle;
+    img.style.position = 'absolute';
+
+    // 随机初始位置
+    const sandboxWidth = sandbox.offsetWidth;
+    const sandboxHeight = sandbox.offsetHeight;
+    const randomX = Math.random() * (sandboxWidth - 60);
+    const randomY = Math.random() * (sandboxHeight - 60);
+    img.style.left = `${randomX}px`;
+    img.style.top = `${randomY}px`;
+
+    img.onmousedown = function (event) {
+    event.preventDefault();
+
+    const shiftX = event.clientX - img.getBoundingClientRect().left;
+    const shiftY = event.clientY - img.getBoundingClientRect().top;
+
+    const moveAt = (pageX, pageY) => {
+        const sandboxRect = sandbox.getBoundingClientRect();
+        let newX = pageX - shiftX - sandboxRect.left;
+        let newY = pageY - shiftY - sandboxRect.top;
+
+        const moveAt = (pageX, pageY) => {
+    const sandboxRect = sandbox.getBoundingClientRect();
+    let newX = Math.min(Math.max(pageX - shiftX - sandboxRect.left, 0), sandboxRect.width - img.offsetWidth);
+    let newY = Math.min(Math.max(pageY - shiftY - sandboxRect.top, 0), sandboxRect.height - img.offsetHeight);
+
+    img.style.left = `${newX}px`;
+    img.style.top = `${newY}px`;
+};
+
+function previewCategory(categoryId) {
+    const select = document.getElementById(categoryId);
+    const options = Array.from(select.options);
+
+    const previewDiv = document.createElement('div');
+    previewDiv.style.display = 'flex';
+    previewDiv.style.flexWrap = 'wrap';
+    previewDiv.style.padding = '10px';
+    previewDiv.style.background = '#f0f0f0';
+
+    options.forEach((option) => {
+        const img = document.createElement('img');
+        img.src = `images/${option.value}`;
+        img.alt = option.text;
+        img.title = option.title;
+        img.style.width = '50px';
+        img.style.height = '50px';
+        img.style.margin = '5px';
+        previewDiv.appendChild(img);
+    });
+
+    document.body.appendChild(previewDiv);
+
+    setTimeout(() => document.body.removeChild(previewDiv), 3000); // 自动隐藏预览
+}
+
+
+        // Ensure the image stays within sandbox bounds
+        if (newX < 0) newX = 0;
+        if (newY < 0) newY = 0;
+        if (newX + img.offsetWidth > sandboxRect.width) {
+            newX = sandboxRect.width - img.offsetWidth;
+        }
+        if (newY + img.offsetHeight > sandboxRect.height) {
+            newY = sandboxRect.height - img.offsetHeight;
+        }
+
+        img.style.left = `${newX}px`;
+        img.style.top = `${newY}px`;
+    };
+
+    const onMouseMove = (event) => {
+        moveAt(event.pageX, event.pageY);
+    };
+
+    const onMouseUp = () => {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    };
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+};
+
+
+    sandbox.appendChild(img);
+}
+
+// 按类别调用 addSymbol
+function addPlant() {
+    addSymbol('plant-select');
+}
+
+function addVehicle() {
+    addSymbol('vehicle-select');
+}
+
+function addBuilding() {
+    addSymbol('building-select');
+}
+
+function addAnimal() {
+    addSymbol('animal-select');
+}
+
+function addItem() {
+    addSymbol('item-select');
+}
+
+
+function clearSandbox() {
+    const sandbox = document.getElementById('sandbox-area');
+    while (sandbox.firstChild) {
+        sandbox.removeChild(sandbox.firstChild); // 移除每个图片元素
+    }
+}
+
+
+function loadSandboxState() {
+    const sandbox = document.getElementById('sandbox-area');
+    const savedState = JSON.parse(localStorage.getItem('sandboxState'));
+
+    if (savedState) {
+        sandbox.innerHTML = ''; // Clear current sandbox
+        savedState.forEach(({ src, left, top, alt, title }) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = alt;
+            img.title = title;
+            img.style.position = 'absolute';
+            img.style.left = left;
+            img.style.top = top;
+
+            // Reapply drag functionality
+            img.onmousedown = function (event) {
+                event.preventDefault();
+
+                const shiftX = event.clientX - img.getBoundingClientRect().left;
+                const shiftY = event.clientY - img.getBoundingClientRect().top;
+
+                const moveAt = (pageX, pageY) => {
+                    const sandboxRect = sandbox.getBoundingClientRect();
+                    let newX = pageX - shiftX - sandboxRect.left;
+                    let newY = pageY - shiftY - sandboxRect.top;
+
+                    if (newX < 0) newX = 0;
+                    if (newY < 0) newY = 0;
+                    if (newX + img.offsetWidth > sandboxRect.width) {
+                        newX = sandboxRect.width - img.offsetWidth;
+                    }
+                    if (newY + img.offsetHeight > sandboxRect.height) {
+                        newY = sandboxRect.height - img.offsetHeight;
+                    }
+
+                    img.style.left = `${newX}px`;
+                    img.style.top = `${newY}px`;
+                };
+
+                const onMouseMove = (event) => moveAt(event.pageX, event.pageY);
+
+                const onMouseUp = () => {
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                };
+
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+            };
+
+            sandbox.appendChild(img);
+        });
+    }
+}
+function saveSandboxState() {
+    const sandbox = document.getElementById('sandbox-area');
+    const images = Array.from(sandbox.getElementsByTagName('img')).map((img) => ({
+        src: img.src,
+        left: img.style.left,
+        top: img.style.top,
+        alt: img.alt,
+        title: img.title,
+    }));
+
+    console.log("Saving state:", images); // 调试输出
+    localStorage.setItem('sandboxState', JSON.stringify(images));
+}
+
+
+function saveSandboxState() {
+    const sandbox = document.getElementById('sandbox-area');
+    const images = Array.from(sandbox.getElementsByTagName('img')).map((img) => ({
+        src: img.src.replace(location.origin + "/", ""), // 仅保存相对路径
+        left: img.style.left,
+        top: img.style.top,
+        alt: img.alt,
+        title: img.title,
+    }));
+
+    localStorage.setItem('sandboxState', JSON.stringify(images));
+}
+
+function loadSandboxState() {
+    const sandbox = document.getElementById('sandbox-area');
+    const savedState = JSON.parse(localStorage.getItem('sandboxState'));
+
+    if (savedState) {
+        sandbox.innerHTML = '';
+        savedState.forEach(({ src, left, top, alt, title }) => {
+            const img = document.createElement('img');
+            img.src = src.startsWith('images/') ? src : `images/${src}`;
+            img.alt = alt;
+            img.title = title;
+            img.style.position = 'absolute';
+            img.style.left = left;
+            img.style.top = top;
+
+            img.onmousedown = function (event) {
+                event.preventDefault();
+                const shiftX = event.clientX - img.getBoundingClientRect().left;
+                const shiftY = event.clientY - img.getBoundingClientRect().top;
+
+                const moveAt = (pageX, pageY) => {
+                    const sandboxRect = sandbox.getBoundingClientRect();
+                    let newX = Math.min(Math.max(pageX - shiftX - sandboxRect.left, 0), sandboxRect.width - img.offsetWidth);
+                    let newY = Math.min(Math.max(pageY - shiftY - sandboxRect.top, 0), sandboxRect.height - img.offsetHeight);
+
+                    img.style.left = `${newX}px`;
+                    img.style.top = `${newY}px`;
+                };
+
+                const onMouseMove = (event) => moveAt(event.pageX, event.pageY);
+
+                const onMouseUp = () => {
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                };
+
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+            };
+
+            sandbox.appendChild(img);
+        });
+    }
+}
+function saveSandboxState() {
+    const sandbox = document.getElementById('sandbox-area');
+    const images = Array.from(sandbox.getElementsByTagName('img')).map((img) => ({
+        src: img.src.replace(location.origin + "/", ""),
+        left: img.style.left,
+        top: img.style.top,
+        alt: img.alt,
+        title: img.title,
+    }));
+
+    localStorage.setItem('sandboxState', JSON.stringify(images));
+    alert("Sandbox state saved!");
+}
+
+function loadSandboxState() {
+    const sandbox = document.getElementById('sandbox-area');
+    const savedState = JSON.parse(localStorage.getItem('sandboxState'));
+
+    if (savedState) {
+        sandbox.innerHTML = '';
+        savedState.forEach(({ src, left, top, alt, title }) => {
+            const img = document.createElement('img');
+            img.src = src.startsWith('images/') ? src : `images/${src}`;
+            img.alt = alt;
+            img.title = title;
+            img.style.position = 'absolute';
+            img.style.left = left;
+            img.style.top = top;
+
+            img.onmousedown = function (event) {
+                event.preventDefault();
+                const shiftX = event.clientX - img.getBoundingClientRect().left;
+                const shiftY = event.clientY - img.getBoundingClientRect().top;
+
+                const moveAt = (pageX, pageY) => {
+                    const sandboxRect = sandbox.getBoundingClientRect();
+                    let newX = Math.min(Math.max(pageX - shiftX - sandboxRect.left, 0), sandboxRect.width - img.offsetWidth);
+                    let newY = Math.min(Math.max(pageY - shiftY - sandboxRect.top, 0), sandboxRect.height - img.offsetHeight);
+
+                    img.style.left = `${newX}px`;
+                    img.style.top = `${newY}px`;
+                };
+
+                const onMouseMove = (event) => moveAt(event.pageX, event.pageY);
+
+                const onMouseUp = () => {
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                };
+
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+            };
+
+            sandbox.appendChild(img);
+        });
+        alert("Sandbox state loaded!");
+    } else {
+        alert("No saved state found.");
+    }
+}
+
+if (typeof Storage === "undefined") {
+    alert("Your browser does not support localStorage. Save/Load functionality will not work.");
+}
+
+
+    </script>
+</body>
+</html>
