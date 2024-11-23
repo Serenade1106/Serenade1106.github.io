@@ -80,6 +80,9 @@
                 <option value="animals">Animals</option>
                 <option value="buildings">Buildings</option>
                 <option value="items">Items</option>
+                <option value="nature">Nature</option>
+                <option value="foods">Foods</option>
+                <option value="figure">Figure</option>
             </select>
             <select id="symbol-options">
                 <!-- Options will be dynamically loaded -->
@@ -155,6 +158,42 @@
                 { value: "hourglass.png", title: "Hourglass (Time and Reflection)" },
                 { value: "paint_palette.png", title: "Paint Palette (Creativity and Self-Expression)" },
             ],
+            nature: [
+                { value: "iceberg.png", title: "Iceberg (Depth and Mystery)" },
+                { value: "mountain.png", title: "Mountain (Stability and Achievement)" },
+                { value: "rainbow.png", title: "Rainbow (Hope and Diversity)" },
+                { value: "river.png", title: "River (Flow and Change)" },
+                { value: "waterfall.png", title: "Waterfall (Energy and Renewal)" },
+                { value: "sun.png", title: "Sun (Warmth and Positivity)" },
+                { value: "moon.png", title: "Moon (Calmness and Intuition)" },
+                { value: "snow.png", title: "Snow (Purity and Tranquility)" },
+                { value: "rain.png", title: "Rain (Cleansing and Growth)" },
+                { value: "wave.png", title: "Wave (Movement and Power)" },
+            ],
+            foods: [
+                { value: "burger.png", title: "Burger (Convenience and Indulgence)" },
+                { value: "noodles.png", title: "Noodles (Comfort and Versatility)" },
+                { value: "seafood.png", title: "Seafood (Freshness and Luxury)" },
+                { value: "pizza.png", title: "Pizza (Sharing and Enjoyment)" },
+                { value: "fried_chicken.png", title: "Fried Chicken (Crispness and Flavor)" },
+                { value: "salad.png", title: "Salad (Health and Simplicity)" },
+                { value: "bbq.png", title: "BBQ (Celebration and Togetherness)" },
+                { value: "fruits.png", title: "Fruits (Nature and Vitality)" },
+                { value: "soup.png", title: "Soup (Comfort and Warmth)" },
+                { value: "rice.png", title: "Rice (Foundation and Sustenance)" },
+            ],
+            figure: [
+                { value: "queen.png", title: "Queen (Leadership and Grace)" },
+                { value: "king.png", title: "King (Authority and Protection)" },
+                { value: "police.png", title: "Police Officer (Safety and Order)" },
+                { value: "firefighter.png", title: "Firefighter (Bravery and Rescue)" },
+                { value: "doctor.png", title: "Doctor (Healing and Care)" },
+                { value: "athlete.png", title: "Athlete (Strength and Determination)" },
+                { value: "priest.png", title: "Priest (Spirituality and Guidance)" },
+                { value: "teacher.png", title: "Teacher (Knowledge and Growth)" },
+                { value: "chef.png", title: "Chef (Creativity and Cuisine)" },
+                { value: "musician.png", title: "Musician (Harmony and Inspiration)" },
+            ],
         };
 
         function updateOptions() {
@@ -167,19 +206,31 @@
         }
 
         function addSymbol() {
-            const sandbox = document.getElementById("sandbox-area");
-            const select = document.getElementById("symbol-options");
-            const option = select.options[select.selectedIndex];
+    const sandbox = document.getElementById("sandbox-area");
+    const select = document.getElementById("symbol-options");
+    const option = select.options[select.selectedIndex];
 
-            const img = document.createElement("img");
-            img.src = `images/${option.value}`;
-            img.title = option.title;
-            img.style.left = `${Math.random() * (sandbox.offsetWidth - 60)}px`;
-            img.style.top = `${Math.random() * (sandbox.offsetHeight - 60)}px`;
-            makeDraggable(img);
+    const category = document.getElementById("symbol-category").value;
+    const selectedData = symbolData[category].find(item => item.title === option.text);
 
-            sandbox.appendChild(img);
-        }
+    const img = document.createElement("img");
+    img.src = `images/${option.value}`;
+    img.title = option.title;
+    img.style.left = `${Math.random() * (sandbox.offsetWidth - 60)}px`;
+    img.style.top = `${Math.random() * (sandbox.offsetHeight - 60)}px`;
+    makeDraggable(img);
+
+    sandbox.appendChild(img);
+
+    if (selectedData) {
+        const speech = new SpeechSynthesisUtterance(selectedData.title);
+        speech.lang = "en-US"; 
+        speech.rate = 0.9; 
+        speech.pitch = 1;
+        speechSynthesis.speak(speech);
+    }
+}
+
 
         function makeDraggable(img) {
             img.onmousedown = (event) => {
